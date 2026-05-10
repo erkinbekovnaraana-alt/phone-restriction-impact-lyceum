@@ -1,151 +1,102 @@
-# Phone Restriction Impact Study — Behavioral Analysis in a Controlled Learning Environment
+# Phone Restriction Impact Study — Student Performance Analysis
 
-## Overview
-
-This project investigates the impact of phone access on student performance, focus, and sleep within a structured academic environment.
-
-The study simulates conditions similar to a disciplined learning setting, where phone usage is restricted, and evaluates how reduced digital distractions influence academic outcomes.
+## Overview  
+This project analyzes how phone access affects student performance, focus, and sleep in a structured academic environment.  
+The goal is to understand whether reducing digital distractions improves learning outcomes.
 
 ---
 
-## Research Question
-
-Does restricting phone access improve student performance and focus?
-
----
-
-## Hypothesis
-
-Students without access to phones will:
-
-* demonstrate higher levels of focus
-* achieve better academic results
-* experience changes in sleep patterns
+## Problem Statement  
+Smartphone usage is a major source of distraction for students.  
+This project evaluates how limiting phone access impacts academic performance and cognitive focus.
 
 ---
 
-## Data
-
-A dataset was constructed to compare two groups:
-
-* `phone_access = 0`: students without phone access
-* `phone_access = 1`: students with phone access
-
-Features included:
-
-* `study_hours`: time spent studying
-* `sleep_hours`: duration of sleep
-* `focus_level`: self-reported concentration level
-* `exam_score`: academic performance
+## Research Question  
+How does phone access influence student performance, focus level, and sleep patterns?
 
 ---
 
-## Methodology
+## Dataset  
 
-### Experimental Design
-
-The dataset represents a simplified comparison between two groups under different conditions:
-
-* controlled environment (no phone access)
-* unrestricted environment (phone access allowed)
-
----
-
-### Visualization
-
-Box plots were used to compare distributions between groups:
-
-1. Phone Access vs Exam Score
-2. Phone Access vs Focus Level
-3. Phone Access vs Sleep Hours
-
-This approach highlights differences in central tendency and variability.
+- Simulated dataset representing student behavior  
+- Variables:  
+  - phone_access (0 = no phone, 1 = phone allowed)  
+  - study_hours  
+  - sleep_hours  
+  - focus_level  
+  - exam_score  
 
 ---
 
-## Results
+## Methodology  
 
-### Academic Performance
+### Data Preparation  
+- Structured dataset using Python and Pandas  
+- Organized variables to reflect realistic student behavior patterns  
 
-Students without phone access achieved significantly higher exam scores:
-
-* stronger consistency
-* higher median performance
-
----
-
-### Focus Level
-
-A clear increase in focus levels is observed in the no-phone group:
-
-* fewer distractions
-* improved concentration during study time
+### Data Analysis & Visualization  
+- Used Plotly for interactive visualizations  
+- Compared groups (with vs without phone access) using box plots  
+- Analyzed relationships across performance, focus, and sleep  
 
 ---
 
-### Sleep Patterns
+## Results  
 
-Students with phone access tend to sleep more, but:
-
-* increased sleep does not translate into better performance
-* quality of focus appears more important than quantity of rest
-
----
-
-## Key Insights
-
-* Reduced phone usage is strongly associated with improved academic outcomes
-* Focus plays a critical mediating role between environment and performance
-* Digital distractions can negatively impact learning efficiency
+- Students without phone access show higher exam scores  
+- Focus levels are significantly higher in phone-restricted environments  
+- Students with phone access tend to sleep more but perform хуже academically  
 
 ---
 
-## Limitations
+## Key Insights  
 
-* Small sample size
-* Synthetic dataset (not collected from real participants)
-* Focus level is subjective
-* No statistical significance testing applied
-
----
-
-## Future Work
-
-* Collect real-world data from students
-* Conduct A/B testing in actual classrooms
-* Apply statistical tests (t-test, p-value analysis)
-* Build predictive models for performance
-* Analyze long-term behavioral effects
+- Reduced phone usage leads to improved concentration and academic outcomes  
+- Digital distractions negatively impact performance despite slightly better rest  
+- Structured environments (like lyceums) benefit from controlled phone usage policies  
 
 ---
 
-## Tech Stack
+## Conclusion  
 
-* Python
-* Pandas
-* Plotly
+The analysis shows that limiting phone access improves student focus and academic performance, even if sleep duration is slightly lower.  
 
----
-
-## Repository Structure
-
-```id="p1h2o3"
-phone-restriction-impact-study/
-│
-├── notebook.ipynb
-├── README.md
-```
+This suggests that reducing distractions plays a critical role in enhancing learning efficiency and outcomes.
 
 ---
 
-## Conclusion
+## Limitations  
 
-The findings suggest that restricting phone access can significantly improve student focus and academic performance. While increased sleep is observed among students with phone access, it does not compensate for the negative effects of distraction.
-
-This study highlights the importance of controlled learning environments in maximizing educational outcomes.
+- Synthetic dataset (not real-world data)  
+- Small sample size  
+- Does not include additional factors such as stress, teaching quality, or motivation  
 
 ---
 
-## Author
+## Future Work  
 
-Independent research project exploring behavioral factors affecting student performance.
+- Collect real-world student data  
+- Apply machine learning models for prediction  
+- Expand variables (stress, environment, learning methods)  
+- Conduct statistical significance testing  
+
+---
+
+## Tech Stack  
+
+- Python  
+- Pandas  
+- Plotly  
+
+---
+
+## Project Value  
+
+This project demonstrates the ability to analyze behavioral data and extract insights that can inform educational policies and improve student outcomes.
+
+---
+
+## Author  
+
+Data Science & Machine Learning student focused on applying data analysis to real-world human behavior and education systems
